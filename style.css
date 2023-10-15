@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Caveat:wght@700&family=Inclusive+Sans&family=Lobster&family=Mooli&family=Poppins:wght@200;300;500&family=Quicksand:wght@300&family=Raleway+Dots&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./assets/Screenshot\ 2023-09-30\ 033146\ \(1\).png);
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 20px;
+}
+.navbar .middle a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding-inline: 20px;
+}
+.navbar .last button{
+    padding: 8px;
+    width: 100px;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.navbar .last button:hover{
+    background-color: rgb(253,195,35);
+    border: none;
+}
+.navbar .middle a:hover{
+    color: rgb(253,195,35);
+}
+/* ********************* */
+.heading{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.heading h1{
+    font-size: 60px;
+}
+.heading p{
+    padding-block: 40px;
+}
+.heading button{
+    width: 130px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(253,195,35);
+    font-weight: 800;
+    cursor: pointer;
+}
+.heading button:hover{
+    border: 2px solid rgb(253,195,35);
+    background: transparent;   
+}
+
+/* ******************************* */
+@media (max-width:1024px) {
+    .navbar .middle a{
+        padding-inline: 10px;
+        font-weight: 500;
+    }   
+}
+@media (max-width:768px) {
+    .navbar .middle a{
+        padding-inline: 10px;
+    }  
+    .navbar .last h1{
+        font-size: 20px;
+    } 
+    .heading h1{
+        font-size: 50px;
+    }
+    .heading p{
+        padding-block: 20px;
+    }
+}
